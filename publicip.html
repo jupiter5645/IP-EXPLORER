@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>IP Information</title>
+<link rel="stylesheet" href="publicipstyles.css">
+<style>
+    .blink {
+        animation: blinker 1s linear infinite;
+    }
+    @keyframes blinker {
+        50% {
+            opacity: 0;
+        }
+    }
+</style>
+</head>
+<body>
+    <div class="container">
+        <h1>Know Your Public IP Information</h1>
+          <img src="Public-IP-Tren-Internet.jpg" alt="Public IP Address" style="width: 100%; max-width: 400px; margin: 20px auto; display: block;">
+        <button id="testButton" class="blink">Test your Public IP</button>
+        <table id="ipTable" style="display:none;">
+            <tr>
+                <td>My Public IPv4:</td>
+                <td id="ipv4">Fetching IPv4 address...</td>
+            </tr>
+            <tr>
+                <td>My Public IPv6:</td>
+                <td id="ipv6">Fetching IPv6 address...</td>
+            </tr>
+            <tr>
+                <td>Location:</td>
+                <td id="location">Fetching location...</td>
+            </tr>
+            <tr>
+                <td>My ISP:</td>
+                <td id="isp">Fetching ISP...</td>
+            </tr>
+        </table>
+    </div>
+    <script src="publicipscript.js"></script>
+</body>
+</html>
+

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Email OTP Verification</title>
+<link rel="stylesheet" href="emailotpstyles.css">
+<script src="https://smtpjs.com/v3/smtp.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Email OTP Verification</h1>
+        <div id="emailForm">
+            <label for="email">Enter Email Address:</label>
+            <input type="email" id="email" name="email" required autocomplete="off">
+            <button onclick="sendOTP()">Send OTP</button>
+            <p id="otpSentMessage" style="display:none;">OTP sent to your email address. Please check your inbox and spam folder.</p>
+        </div>
+        <form id="otpForm" style="display:none;" onsubmit="return validateOTP()">
+            <label for="otp">Enter OTP:</label>
+            <input type="text" id="otp" name="otp" required maxlength="6">
+            <input type="hidden" id="storedOTP">
+            <button type="submit">Verify OTP</button>
+        </form>
+    </div>
+<script src="emailotpscript.js"></script>
+</body>
+</html>
+

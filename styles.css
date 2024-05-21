@@ -1,0 +1,93 @@
+/* Global Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+/* Container Styles */
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Heading Styles */
+h1, h2, h3 {
+    color: #333;
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+/* Tabs Styles */
+.tabs {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.tablinks {
+    background-color: #f0f0f0;
+    border: none;
+    color: #333;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    transition: background-color 0.3s;
+}
+
+.tablinks:hover {
+    background-color: #e0e0e0;
+}
+
+/* Tab Content Styles */
+.tabcontent {
+    padding: 20px;
+    border-radius: 0 0 10px 10px;
+    border: 1px solid #ddd;
+}
+
+.tabcontent img {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    height: auto;
+}
+
+/* Button Styles */
+#checkPublicIPButton {
+    display: block;
+    margin: 20px auto;
+    background-color: #f44336;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    animation: blink 1s infinite;
+}
+
+/* Blink Animation */
+@keyframes blink {
+    0%, 49% {
+        background-color: #f44336; /* Red color */
+    }
+    50%, 100% {
+        background-color: #ff6659; /* Lighter red */
+    }
+}
+

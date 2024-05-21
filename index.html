@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title> SUPRIYA IP Explorer</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1> SM IP Explorer</h1>
+        <div class="tabs">
+            <button class="tablinks" onclick="openTab(event, 'home')">Home</button>
+        </div>
+        <div id="home" class="tabcontent">
+            
+            <div id="public-ip-info">
+                <h3>Public IP Address</h3>
+                <p>A public IP (Internet Protocol) address is a unique address assigned to a computer or device that is connected to the internet. It serves as an identifier for the device on the internet, allowing other devices and servers to communicate with it. Public IP addresses are assigned by Internet Service Providers (ISPs) and are globally unique, meaning no two devices on the internet can have the same public IP address at the same time. Public IP addresses are used for communication over the internet, such as browsing websites, sending emails, and accessing online services.</p>
+                <img src="public-ip-image.jpg" alt="Public IP Address">
+            </div>
+        </div>
+    </div>
+    <button id="checkPublicIPButton" onclick="window.location.href = 'checkip.html'">Check Your Public IP</button>
+
+    <script src="script.js"></script>
+</body>
+</html>
+

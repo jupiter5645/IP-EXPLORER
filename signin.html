@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sign In</title>
+<link rel="stylesheet" href="signinstyle.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Sign In</h1>
+        <form id="signinForm" onsubmit="return validateForm()">
+            <label for="email">Email Address:</label>
+           <input type="email" id="email" name="email" required autocomplete="email">
+
+            <label for="password">Password:</label>
+            <div class="password-container">
+                <input type="password" id="password" name="password" required>
+                <span class="password-toggle" onclick="togglePasswordVisibility('password')">👁️</span>
+            </div>
+            <div id="error" style="display: none; color: red;">Invalid email or password.</div>
+            <button type="submit">Sign In</button>
+         
+        </form>
+    </div>
+    <script src="signinscript.js"></script>
+</body>
+</html>
+

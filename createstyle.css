@@ -1,0 +1,81 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+}
+
+.container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+h1 {
+    color: #007bff;
+    margin-bottom: 20px;
+}
+
+label {
+    display: inline-block;
+    width: 150px;
+    text-align: right;
+    margin-right: 20px;
+    margin-bottom: 10px;
+}
+
+input,
+select {
+    width: calc(100% - 180px);
+    padding: 8px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.password-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.password-container label {
+    flex: 0 0 150px; /* Fixed width for label */
+    text-align: right;
+    margin-right: 20px;
+}
+
+.password-container input {
+    flex: 1; /* Take remaining width */
+    padding: 8px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    margin-right: 10px;
+}
+
+.password-toggle {
+    cursor: pointer;
+}
+
+
+
+.button-container {
+    text-align: center;
+}
+

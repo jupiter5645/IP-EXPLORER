@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Create Account</title>
+<link rel="stylesheet" href="createstyle.css">
+</head>
+<body>
+    <h1>Create Account</h1>
+    <form id="signupForm" onsubmit="return validateForm()">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required autocomplete="name"><br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required autocomplete="email"><br>
+        <label for="confirmEmail">Confirm Email:</label>
+        <input type="email" id="confirmEmail" name="confirmEmail" required autocomplete="email"><br>
+        <label for="countryCode">Country Code:</label>
+        <select id="countryCode" name="countryCode" required>
+            <option value="+91">+91 (India)</option>
+        </select><br>
+        <label for="mobile">Mobile Number:</label>
+        <input type="tel" id="mobile" name="mobile" required autocomplete="tel" minlength="10" maxlength="10" pattern="\d{10}"><br>
+        <div class="password-container">
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required autocomplete="new-password">
+            <span class="password-toggle" onclick="togglePasswordVisibility('password')">👁️</span>
+        </div>
+        <div class="password-container">
+            <label for="confirmPassword">Confirm Password:</label>
+            <input type="password" id="confirmPassword" name="confirmPassword" required autocomplete="new-password">
+            <span class="password-toggle" onclick="togglePasswordVisibility('confirmPassword')">👁️</span>
+        </div>
+        <button type="submit">Submit</button>
+    </form>
+    <div id="successMessage" style="display: none; text-align: center; padding: 20px; background-color: #d4edda; border-radius: 5px; margin-top: 20px;">
+    Your account details are stored. You will be redirected to the OTP verification page shortly.
+</div>
+
+    <script src="createscript.js"></script>
+</body>
+</html>
+
